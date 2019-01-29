@@ -4,7 +4,9 @@ Checks Deere's [taxonomy](https://www.deere.com/en/us-en.taxonomy) for broken li
 
 ## Usage
 
-`npm install @hutsoninc/utils`
+`npm run start`
+
+Results are written to CSV files in the `data/` directory.
 
 ## License
 
