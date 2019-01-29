@@ -1,0 +1,26 @@
+{
+  "name": "deere-taxonomy-validator",
+  "version": "1.0.0",
+  "description": "Checks Deere's taxonomy for broken links, redirects, etc...",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "AustinLeeGordon",
+    "email": "gordon.austin2@gmail.com",
+    "url": "http://www.austinleegordon.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@hutsoninc/utils": "^1.0.0",
+    "bluebird": "^3.5.3",
+    "fetch-retry": "^2.0.0",
+    "xml2js": "^0.4.19"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hutsoninc/deere-taxonomy-validator"
+  }
+}
