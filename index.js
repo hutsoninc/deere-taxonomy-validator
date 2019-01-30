@@ -71,8 +71,6 @@ async function run() {
 
     urls = await Promise.all(promises);
 
-    console.log(urls.length, 'urls');
-
     let changed = [];
     let missing = [];
 
@@ -96,13 +94,6 @@ async function run() {
         .filter(obj => obj);
 
     console.log('Writing results...');
-    if (redirectErrs.length > 0) {
-        fs.writeFileSync(
-            path.join(__dirname, 'data/redirect-errs.json'),
-            JSON.stringify(redirectErrs)
-        );
-    }
-
     fs.writeFileSync(
         path.join(__dirname, 'data/changed-urls.csv'),
         jsonToCsv(changed, ['old_url', 'new_url'])
