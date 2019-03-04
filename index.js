@@ -94,6 +94,9 @@ async function run() {
         .filter(obj => obj);
 
     console.log('Writing results...');
+    if (!fs.existsSync(path.join(__dirname, 'data'))) {
+        fs.mkdirSync(path.join(__dirname, 'data'));
+    }
     fs.writeFileSync(
         path.join(__dirname, 'data/changed-urls.csv'),
         jsonToCsv(changed, ['old_url', 'new_url'])

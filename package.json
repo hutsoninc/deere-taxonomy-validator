@@ -4,6 +4,7 @@
   "description": "Checks Deere's taxonomy for broken links, redirects, etc...",
   "main": "index.js",
   "scripts": {
+    "clean": "rimraf data/",
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,5 +22,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/hutsoninc/deere-taxonomy-validator"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.3"
   }
 }
