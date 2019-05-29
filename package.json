@@ -15,7 +15,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@hutsoninc/utils": "^1.0.3",
+    "@hutsoninc/utils": "^1.0.4",
     "bluebird": "^3.5.3",
     "fetch-retry": "^2.0.0"
   },
