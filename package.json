@@ -17,7 +17,7 @@
   "dependencies": {
     "@hutsoninc/utils": "^1.0.3",
     "bluebird": "^3.5.3",
-    "fetch-retry": "^2.0.0"
+    "fetch-retry": "^2.2.1"
   },
   "repository": {
     "type": "git",
